@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login Page</title>
+    <link rel="icon" href="images/netflixlogo.webp">
+    <style>
+        body {
+            background-image: url("images/netflix-image.jpg");
+            min-height: 100vh;
+            background-size: cover;
+            color: white;
+            filter: saturate(85%);
+        }
+
+        .image-logo {
+            width: 11%;
+            margin-left: 10%;
+            margin-top: 7px;
+        }
+
+        .login-form {
+            margin-top: 2%;
+            padding: 2%;
+            background-color: black;
+            opacity: 0.75;
+            color: white;
+            width: 27%;
+            text-align: center;
+            margin-left: 35%;
+            border-radius: 5px;
+        }
+
+        .login-form h1 {
+            text-align: left;
+            margin-left: 8%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .login-form input {
+            width: 78%;
+            padding: 3.5%;
+            background-color: rgb(63, 59, 79);
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .login-form .signin {
+            width: 84%;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: red;
+            color: white;
+            padding: 3%;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* .login-form .signin:hover {
+            background-color: white;
+            color: red;
+        } */
+
+        .login-form .description {
+            text-align: left;
+            margin: 28% 0% 28% 10%;
+        }
+
+        .description p {
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: grey;
+        }
+
+        .login-form a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .description .recaptcha {
+            font-size: 14px;
+        }
+
+        .description .learn {
+            color: blue;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5%;
+            margin-top: 2%;
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .navbar a {
+            color: grey;
+            font-size: 19px;
+        }
+
+        .language {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 5px;
+            padding: 8px;
+            width: 18vh;
+            text-align: center;
+            font-size: 18px;
+            margin-right: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/netflix.png" alt="netflix-logo" class="image-logo">
+    </div>
+    <div class="login-form">
+        <h1>Sign In</h1>
+        <p><input type="email" placeholder="Email or Phone number"></p>
+        <p><input type="password" placeholder="Password"></p>
+        <button class="signin">Sign In</button>
+        <p><a href="">Forget Password?</a></p>
+        <div class="description">
+            <!-- <input type="checkbox"><span>Remember me</span> -->
+            <p>New to Netflix?<a href="index.html">Sign up now.</a></p>
+            <p class="recaptcha">This page is protected by Google reCAPTCHA to <br> ensure you're not a bot. <a href=""
+                    class="learn"> Learn more.</a>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="navbar">
+            <p>Questions? Call <a href="">000-800-100-8343</a></p>
+            <p><a href="">FAQ</a></p>
+            <p><a href="">Cookie Preference</a></p>
+            <select class="language">
+                <option value="English">English</option>
+                <option value="हिंदी">हिंदी</option>
+            </select>
+        </div>
+        <div class="navbar">
+            <p><a href="">Help Center</a></p>
+            <p><a href="">Corporate Information</a></p>
+        </div>
+        <div class="navbar">
+            <p><a href="">Terms of Use</a></p>
+        </div>
+        <div class="navbar">
+            <p><a href="">Privacy</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
